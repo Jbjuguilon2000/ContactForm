@@ -5,7 +5,7 @@ form.onsubmit = (e) => {
   e.preventDefault();
   statusText.style.display = "block";
 
-  let xhr = new XMLHttpRequest();
+  let xhr = new XMLHttpsRequest();
   xhr.open("POST", "message.php", true);
   xhr.onload = () => {
     if (xhr.readyState == 4 && xhr.status == 200) {
